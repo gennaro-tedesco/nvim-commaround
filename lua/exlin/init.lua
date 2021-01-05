@@ -24,12 +24,21 @@ local function FloatingWindow(popup_height_ratio, popup_width_ratio)
 	end
 	table.insert(border, bot)
 
-	local buf = vim.api.nvim_create_buf(false, true)
-	vim.api.nvim_buf_set_option(buf, 'bufhidden', 'wipe')
-	vim.api.nvim_buf_set_option(buf, 'filetype', 'exlin')
-	vim.api.nvim_buf_set_lines(buf, 0, -1, true, border)
-	vim.api.nvim_open_win(buf, true, opts)
-	vim.api.nvim_set_option('winhl', 'Normal:Floating')
+	local external_buf = vim.api.nvim_create_buf(false, true)
+	vim.api.nvim_buf_set_option(external_buf, 'bufhidden', 'wipe')
+	vim.api.nvim_buf_set_option(external_buf, 'filetype', 'exlin')
+	vim.api.nvim_buf_set_lines(external_buf, 0, -1, true, border)
+	vim.api.nvim_open_win(external_buf, true, opts)
+
+	opts.row = opts.row + 1
+	opts.height = opts.height - 2
+	opts.col = opts.col + 2
+	opts.width = opts.width - 4
+	local internal_buf = vim.api.nvim_create_buf(false, true)
+	vim.api.nvim_buf_set_option(internal_buf, 'bufhidden', 'wipe')
+	vim.api.nvim_buf_set_option(internal_buf, 'filetype', 'exlin')
+	vim.api.nvim_open_win(internal_buf, true, opts)
+	vim.api.nvim_command('au BufWipeout <buffer> exe "silent bwipeout! "'..external_buf)
 end
 
 return {
