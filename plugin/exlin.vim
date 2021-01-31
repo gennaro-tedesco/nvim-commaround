@@ -1,3 +1,7 @@
-lua exlin = require("exlin")
+if exists('g:loaded_exlin')
+  finish
+endif
 
-vnoremap <leader>q :lua exlin.toggle_comment()<CR>
+vnoremap <leader>q :lua require('exlin').toggle_comment()<CR>
+
+let g:loaded_exlin = 1

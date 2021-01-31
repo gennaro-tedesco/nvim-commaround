@@ -8,12 +8,12 @@ local function toggle_comment()
 	  return nil
    end
 
-   local line_start = vim.fn.line("'<")
-   local line_end = vim.fn.line("'>")
-   if line_end == line_start then
-	  comments.toggle_single(filetype_config)
+   local lines = vim.api.nvim_buf_get_lines(0, vim.fn.line("'<")-1, vim.fn.line("'>"), false)
+   local context = {lines = lines, start_number = vim.fn.line("'<")-1, end_number = vim.fn.line("'>")}
+   if #lines > 1 then
+	  comments.toggle_block(filetype_config, context)
    else
-	  comments.toggle_block(filetype_config)
+	  comments.toggle_single(filetype_config)
    end
 end
 
