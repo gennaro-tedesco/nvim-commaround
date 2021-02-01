@@ -1,6 +1,11 @@
 local config = {
-   lua = {single = "--", block_start = "--[[", block_end = "--]]"},
-   vim = {single = "\"", block_start = nil, block_end = nil},
+   c = {single = "//", block = {left = "/*", right = "*/"}},
+   cpp = {single = "//", block = {left = "/*", right = "*/"}},
+   lua = {single = "--", block = {left = "--[[", right = "--]]"}},
+   python = {single = "#", block = nil},
+   r = {single = "#", block = nil},
+   ruby = {single = "#", block = nil},
+   vim = {single = "\"", block = nil},
 }
 
 return {
