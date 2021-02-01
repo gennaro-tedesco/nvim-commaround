@@ -6,7 +6,7 @@ local config = {
    java = {single = "//", block = {left = "/*", right = "*/"}},
    javascript = {single = "//", block = {left = "/*", right = "*/"}},
    go = {single = "//", block = {left = "/*", right = "*/"}},
-   lua = {single = "--", block = {left = "--[[", right = "--]]"}},
+   lua = {single = "--", block = {left = "--[[", right = "]]"}},
    python = {single = "#", block = nil},
    r = {single = "#", block = nil},
    ruby = {single = "#", block = nil},

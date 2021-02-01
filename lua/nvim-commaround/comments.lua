@@ -37,6 +37,15 @@ local function uncomment_block_multiline(filetype_config)
    vim.cmd('\'<,\'>norm 0'..#filetype_config['single']..'x')
 end
 
+--[[
+Definition of the logic to toggle comments: it detects whether the visual
+block is already commented or not and toggles the comments on and off accordingly
+
+Arguments:
+   filetype_config: a table of filetype specific comments characters
+   context: a table containing the selection visual block
+--]]
+
 local function toggle_block(filetype_config, context)
    if filetype_config['block'] ~= nil then
 	  if not is_comment_block_surround(filetype_config, context.lines) then
