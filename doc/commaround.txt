@@ -1,4 +1,4 @@
-*nvim-commaround.txt*    toggle block comments for all filetypes
+nvim-commaround: toggle block comments for all filetypes
 
 Author  : Gennaro Tedesco <gennarotedesco@gmail.com>
 Version : 0.0.1
