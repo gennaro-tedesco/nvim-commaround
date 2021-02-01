@@ -2,6 +2,7 @@ local config = {
    bash = {single = "##", block = nil},
    c = {single = "//", block = {left = "/*", right = "*/"}},
    cpp = {single = "//", block = {left = "/*", right = "*/"}},
+   clojure = {single = ";;", block = nil},
    dockerfile = {single = "##", block = nil},
    java = {single = "//", block = {left = "/*", right = "*/"}},
    javascript = {single = "//", block = {left = "/*", right = "*/"}},

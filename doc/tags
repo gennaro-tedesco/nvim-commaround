@@ -1,0 +1,5 @@
+CommaroundContents 	nvim-commaround.txt 	/*commaround-contents*
+CommaroundMappings 	nvim-commaround.txt 	/*commaround-key-mappings*
+CommaroundOptions 	nvim-commaround.txt 	/*commaround-options*
+CommaroundCustomisation 	nvim-commaround.txt 	/*commaround-customisation*
+ToggleCommaround 	nvim-commaround.txt 	/*ToggleCommaround*
