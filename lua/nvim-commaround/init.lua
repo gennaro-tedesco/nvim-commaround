@@ -1,5 +1,5 @@
-local comments = require("exlin.comments")
-local global_config = require("exlin.config")
+local comments = require("nvim-commaround.comments")
+local global_config = require("nvim-commaround.config")
 
 local function toggle_comment()
    local filetype_config = global_config.config[vim.bo.filetype]
