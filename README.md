@@ -13,8 +13,7 @@ Visually select the lines you want to act on and toggle commaround: the default 
 vmap <leader>c <Plug>ToggleCommaround
 ```
 The plugin detects the buffer filetype and inserts block or line comments according to the selection.
-
-...show gif here...
+![](demo.gif)
 
 
 ## Customisation
