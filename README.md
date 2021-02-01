@@ -1,5 +1,5 @@
 # nvim-commaround
-`nvim-commaround` comes and goes around, comments up and down! It toggles comments for visual blocks or lines according to the buffer filetype: it works out of the box, it is awesome!
+`nvim-commaround` comes and goes around, comments up and down! It toggles comments for visual blocks or inline code according to the buffer filetype: it works out of the box, it is awesome!
 
 ## Installation
 Install it using your favourite plugin manager; for instance if you are using vim-plug
@@ -25,7 +25,7 @@ lua require('nvim-commaround.config').config["todo"] = {single = "--!", block = 
 ```
 replacing "todo" with any specific filetype; leave `{single = "--!", block = nil}` in case no block comments are available.
 
-To change the default mapping to toggle comments define any right hand side of the option
+To change the default mapping to toggle comments define any right hand side of the option below, for example
 ```
 let g:toggle_commaround = 'gcc'
 ```
