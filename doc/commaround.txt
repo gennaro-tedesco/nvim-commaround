@@ -50,9 +50,9 @@ CONTENTS				*commaround-contents*
     2a. KEY MAPPINGS				*commaround-key-mappings*
 
     <Plug>ToggleCommaround        *ToggleCommaround*
-	 Interface to :lua require('nvim-commaround').toggle_comment()<CR>
+	 Interface to `:lua require('nvim-commaround').toggle_comment()<CR>`
 
-    The default key mapping is `vmap <leader>c <Plug>ToggleCommaround`
+    The default key mapping is: `vmap <leader>c <Plug>ToggleCommaround`
 
 ------------------------------------------------------------------------------
     2b. OPTIONS         *commaround-options*
@@ -69,7 +69,8 @@ CONTENTS				*commaround-contents*
 3. CUSTOMISATION        *commaround-customisation*
 
   The default list of filetype characters is
-  ```
+
+>
   local config = {
     bash = {single = "##", block = nil},
     c = {single = "//", block = {left = "/*", right = "*/"}},
@@ -89,17 +90,17 @@ CONTENTS				*commaround-contents*
     sql = {single = "--", block = {left = "/*", right = "*/"}},
     tex = {single = "%", block = nil},
     vim = {single = "\"", block = nil},
-  }
-  ```
+<
+
   To add comment characters for a new filetype define
 
-  ```
+>
   lua require('nvim-commaround.config').config["todo"] = {single = "--!", block = {left = "/*!", right = "!*/"}}
-  ```
+<
+
   replacing "todo" with any specific filetype; leave `{single = "--!", block = nil}` in case no block comments are available.
 
-  To change the default mapping to toggle comments define any right hand side of the option below, for example
-  ```
-  let g:toggle_commaround = 'gcc'
-  ```
-vim:ft=help:et:ts=2:sw=2:sts=2:norl
+  To change the default mapping specify:
+  'let g:toggle_commaround = 'gcc''
+
+ vim:tw=78:ts=8:noet:ft=help:norl: `
