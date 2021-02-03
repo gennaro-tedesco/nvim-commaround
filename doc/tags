@@ -1,5 +1,9 @@
-CommaroundContents 	commaround.txt 	/*commaround-contents*
-CommaroundMappings 	commaround.txt 	/*commaround-key-mappings*
-CommaroundOptions 	commaround.txt 	/*commaround-options*
-CommaroundCustomisation 	commaround.txt 	/*commaround-customisation*
-ToggleCommaround 	commaround.txt 	/*ToggleCommaround*
+ToggleCommaround	commaround.txt	/*ToggleCommaround*
+commaround-contents	commaround.txt	/*commaround-contents*
+commaround-customisation	commaround.txt	/*commaround-customisation*
+commaround-interface	commaround.txt	/*commaround-interface*
+commaround-introduction	commaround.txt	/*commaround-introduction*
+commaround-key-mappings	commaround.txt	/*commaround-key-mappings*
+commaround-options	commaround.txt	/*commaround-options*
+g:toggle_commaround	commaround.txt	/*g:toggle_commaround*
+nvim-commaround	commaround.txt	/*nvim-commaround*
