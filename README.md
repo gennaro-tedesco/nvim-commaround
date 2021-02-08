@@ -6,6 +6,7 @@ Install it using your favourite plugin manager; for instance if you are using vi
 ```
 Plug 'gennaro-tedesco/nvim-commaround'
 ```
+We recommend to use the latest neovim [nightly build](https://github.com/neovim/neovim/releases/tag/nightly), as some lua options may not work otherwise.
 
 ## Usage
 Visually select the lines you want to act on and toggle commaround: the default mapping is
@@ -28,4 +29,10 @@ replacing "todo" with any specific filetype; leave `{single = "--!", block = nil
 To change the default mapping to toggle comments define any right hand side of the option below, for example
 ```
 let g:toggle_commaround = 'gcc'
+```
+
+## Unit tests
+We make use of the [busted framework](https://olivinelabs.com/busted/) for unit tests; run them with
+```
+busted -C lua
 ```
