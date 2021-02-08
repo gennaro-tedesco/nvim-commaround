@@ -77,6 +77,8 @@ end
 return {
    toggle_block = toggle_block,
    toggle_single = toggle_single,
+   is_comment_block_surround = is_comment_block_surround,
+   is_comment_block_multiline = is_comment_block_multiline,
 }
 
 
