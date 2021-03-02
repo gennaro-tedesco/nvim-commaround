@@ -38,4 +38,4 @@ busted -C lua
 ```
 
 ## Feedback
-If you find this plugin useful, consider awarding it a ⭐, it is a great way to give feedback! Otherwise, any additional suggestions or merge request is warmly welcome!
+If you find this plugin useful consider awarding it a ⭐, it is a great way to give feedback! Otherwise, any additional suggestions or merge request is warmly welcome!
