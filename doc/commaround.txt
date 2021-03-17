@@ -1,7 +1,6 @@
 nvim-commaround: toggle block comments for all filetypes
 
 Author  : Gennaro Tedesco <gennarotedesco@gmail.com>
-Version : 0.0.1
 License : MIT license {{{
 
   Copyright (c)
