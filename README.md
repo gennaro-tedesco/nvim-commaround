@@ -1,4 +1,21 @@
-# nvim-commaround
+<h1 align="center">
+  nvim-commaround
+</h1>
+
+<h2 align="center">
+  <img alt="PR" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"/>
+  <img alt="Lua" src="https://img.shields.io/badge/lua-%232C2D72.svg?&style=flat&logo=lua&logoColor=white"/>
+</h2>
+
+<h4 align="center">toggle comments on and off</h4>
+
+<h3 align="center">
+  <a href="#Installation">Installation</a> •
+  <a href="#Usage">Usage</a> •
+  <a href="#Customisation">Customisation</a> •
+  <a href="#Feedback">Feedback</a>
+</h3>
+
 `nvim-commaround` comes and goes around, comments up and down! It toggles comments for visual blocks or inline code according to the buffer filetype: it works out of the box, it is awesome!
 
 ## Installation
