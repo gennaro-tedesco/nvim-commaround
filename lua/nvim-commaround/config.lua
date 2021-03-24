@@ -3,8 +3,10 @@ local config = {
    c = {single = "//", block = {left = "/*", right = "*/"}},
    clojure = {single = ";;", block = nil},
    cpp = {single = "//", block = {left = "/*", right = "*/"}},
+   css = {single = "//", block = {left = "/*", right = "*/"}},
    dockerfile = {single = "##", block = nil},
    go = {single = "//", block = {left = "/*", right = "*/"}},
+   haskell = {single = "--", block = {left = "{-", right = "-}"}},
    java = {single = "//", block = {left = "/*", right = "*/"}},
    javascript = {single = "//", block = {left = "/*", right = "*/"}},
    lua = {single = "--", block = {left = "--[[", right = "]]"}},
@@ -13,9 +15,11 @@ local config = {
    r = {single = "#", block = nil},
    ruby = {single = "#", block = nil},
    rust = {single = "//", block = {left = "/*", right = "*/"}},
+   scss = {single = "//", block = {left = "/*", right = "*/"}},
    sh = {single = "##", block = nil},
    sql = {single = "--", block = {left = "/*", right = "*/"}},
    tex = {single = "%", block = nil},
+   typescript = {single = "//", block = {left = "/*", right = "*/"}},
    vim = {single = "\"", block = nil},
 }
 
