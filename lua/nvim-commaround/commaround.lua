@@ -66,9 +66,9 @@ local function toggle_block(filetype_config, context)
    end
 end
 
-local function toggle_single(filetype_config)
+local function toggle_single(filetype_config, context)
    if filetype_config['single'] == nil then
-	  print('no single line comment available')
+	  toggle_block(filetype_config, context)
 	  return nil
    end
    if not is_comment_single(filetype_config) then
