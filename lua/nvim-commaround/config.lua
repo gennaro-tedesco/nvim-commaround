@@ -7,6 +7,7 @@ local config = {
    dockerfile = {single = "##", block = nil},
    go = {single = "//", block = {left = "/*", right = "*/"}},
    haskell = {single = "--", block = {left = "{-", right = "-}"}},
+   html = {single = nil, block = {left = "<!--", right = "-->"}},
    java = {single = "//", block = {left = "/*", right = "*/"}},
    javascript = {single = "//", block = {left = "/*", right = "*/"}},
    lua = {single = "--", block = {left = "--[[", right = "]]"}},
