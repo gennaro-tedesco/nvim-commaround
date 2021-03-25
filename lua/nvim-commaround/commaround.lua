@@ -69,7 +69,6 @@ end
 local function toggle_single(filetype_config, context)
    if filetype_config['single'] == nil then
 	  toggle_block(filetype_config, context)
-	  return nil
    end
    if not is_comment_single(filetype_config) then
 	  vim.cmd('norm ^i'..filetype_config['single']..' ')
