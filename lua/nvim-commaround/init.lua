@@ -18,7 +18,7 @@ local function toggle_comment()
    if #lines > 1 then
 	  comments.toggle_block(filetype_config, context)
    else
-	  comments.toggle_single(filetype_config)
+	  comments.toggle_single(filetype_config, context)
    end
 end
 

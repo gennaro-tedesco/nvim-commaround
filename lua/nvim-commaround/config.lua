@@ -22,6 +22,7 @@ local config = {
    tex = {single = "%", block = nil},
    typescript = {single = "//", block = {left = "/*", right = "*/"}},
    vim = {single = "\"", block = nil},
+   xml = {single = nil, block = {left = "<!--", right = "-->"}},
 }
 
 return {
