@@ -32,9 +32,7 @@ vmap <leader>c <Plug>ToggleCommaround
 ```
 The plugin detects the buffer filetype and inserts block or line comments according to the selection.
 
-
-![](demo.gif)
-
+![demo](https://user-images.githubusercontent.com/15387611/116161815-c73fa480-a6f4-11eb-940f-a9a012cd8676.gif)
 
 ## Customisation
 The list of filetypes configuration characters can be found [here](https://github.com/gennaro-tedesco/nvim-commaround/blob/master/lua/nvim-commaround/config.lua). To add comment characters for a new filetype (or to modify the existing ones) specify the below in your nvim configurations (`init.vim` or any other option file being sourced at start-up), say
