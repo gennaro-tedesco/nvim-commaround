@@ -23,6 +23,7 @@ local config = {
    typescript = {single = "//", block = {left = "/*", right = "*/"}},
    vim = {single = "\"", block = nil},
    xml = {single = nil, block = {left = "<!--", right = "-->"}},
+   yaml = {single = '#', block = nil},
    zsh = {single = '#', block = nil},
 }
 
