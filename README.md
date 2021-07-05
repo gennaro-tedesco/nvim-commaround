@@ -23,7 +23,6 @@ Install it using your favourite plugin manager; for instance if you are using vi
 ```
 Plug 'gennaro-tedesco/nvim-commaround'
 ```
-We recommend to use the latest neovim [nightly build](https://github.com/neovim/neovim/releases/tag/nightly), as some lua options may not work otherwise.
 
 ## Usage
 Visually select the lines you want to act on and toggle commaround: the default mapping is
