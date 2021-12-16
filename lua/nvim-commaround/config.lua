@@ -21,6 +21,7 @@ local config = {
    sql = {single = "--", block = {left = "/*", right = "*/"}},
    tex = {single = "%", block = nil},
    typescript = {single = "//", block = {left = "/*", right = "*/"}},
+   toml = {single = '#', block = nil},
    vim = {single = "\"", block = nil},
    xml = {single = nil, block = {left = "<!--", right = "-->"}},
    yaml = {single = '#', block = nil},
