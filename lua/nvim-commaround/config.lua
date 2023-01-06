@@ -5,6 +5,7 @@ local config = {
    cpp = {single = "//", block = {left = "/*", right = "*/"}},
    css = {single = "//", block = {left = "/*", right = "*/"}},
    dockerfile = {single = "##", block = nil},
+   dosbatch = {single = "REM", block = nil},
    gitconfig = {single = "#", block = nil},
    go = {single = "//", block = {left = "/*", right = "*/"}},
    haskell = {single = "--", block = {left = "{-", right = "-}"}},
